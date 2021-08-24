@@ -19,11 +19,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # A workflow run is made up of one or more jobs that can run sequentially or in parallel
-          - name: build
+          - name: Run Test
             uses: convictional/trigger-workflow-and-wait@v1.3.0
             with: 
+              owner: AswathN
               repo: my-App
-              github_token: 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
+              github_token: ${{ secrets.G_ACCESS_TOKEN }}
               workflow_file_name: AppTest.yml
     # Runs a single command using the runners shell
           - name: deploy
