@@ -28,4 +28,4 @@ jobs:
     # Runs a single command using the runners shell
           - name: deploy
             run: |
-              echo "test suite"
+              echo "test suite trigger"
