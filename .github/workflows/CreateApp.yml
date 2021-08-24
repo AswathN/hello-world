@@ -25,7 +25,7 @@ jobs:
             with: 
               owner: AswathN
               repo: my-App
-              github_token: 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
+              github_token: ${{ secrets.G_ACCESS_TOKEN }}
               workflow_file_name: AppTest.yml
     # Runs a single command using the runners shell
           - name: deploy
