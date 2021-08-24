@@ -23,6 +23,7 @@ jobs:
             uses: convictional/trigger-workflow-and-wait@v1.3.0
           
             with: 
+              owner: AswathN
               repo: my-App
               github_token: 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
               workflow_file_name: AppTest.yml
